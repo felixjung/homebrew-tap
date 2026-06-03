@@ -5,20 +5,20 @@
 class Wald < Formula
   desc "Manage git worktrees for configured projects"
   homepage "https://github.com/felixjung/wald"
-  version "1.2.1"
+  version "1.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/felixjung/wald/releases/download/v1.2.1/wald_1.2.1_darwin_x86_64.tar.gz"
-      sha256 "a0fe897d9d05f733306fec5ab406f26d72844bd6e76dc0553f70e5e579fd7d57"
+      url "https://github.com/felixjung/wald/releases/download/v1.3.0/wald_1.3.0_darwin_x86_64.tar.gz"
+      sha256 "70e5104792ea65c99bc7b7f2dba1481f2be3b4154da8f0e7aff320763880b7bd"
 
       define_method(:install) do
         bin.install "wald"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/felixjung/wald/releases/download/v1.2.1/wald_1.2.1_darwin_arm64.tar.gz"
-      sha256 "d4036393ee30c0cf5e4d19ea7d5e1f0b6bd7aaf7b7c808ea74e1da11a9fa7ad5"
+      url "https://github.com/felixjung/wald/releases/download/v1.3.0/wald_1.3.0_darwin_arm64.tar.gz"
+      sha256 "02cbeb90ff1bacf0b2e5fd7a8db49110df45120306721c7db8f5136c55e7a654"
 
       define_method(:install) do
         bin.install "wald"
@@ -28,15 +28,15 @@ class Wald < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/felixjung/wald/releases/download/v1.2.1/wald_1.2.1_linux_x86_64.tar.gz"
-      sha256 "3ea7a513a1d4e9a8fbe1ed2cf4b198164122fa6aa1c3b5a6e7258732547a2308"
+      url "https://github.com/felixjung/wald/releases/download/v1.3.0/wald_1.3.0_linux_x86_64.tar.gz"
+      sha256 "db31c288b1f02b828ac90c7990710a19ddb477920a7cc4cb3c25c18c171235bd"
       define_method(:install) do
         bin.install "wald"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/felixjung/wald/releases/download/v1.2.1/wald_1.2.1_linux_arm64.tar.gz"
-      sha256 "ad72be88bfe450dff88738961ad2ff11fce3f6b48bf46dc2ec2fca9c04855a72"
+      url "https://github.com/felixjung/wald/releases/download/v1.3.0/wald_1.3.0_linux_arm64.tar.gz"
+      sha256 "883d972f7cb15ef29aea2be1bee6317796548778cc69033704575194db05515c"
       define_method(:install) do
         bin.install "wald"
       end
